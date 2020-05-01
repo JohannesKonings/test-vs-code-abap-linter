@@ -48,14 +48,15 @@
 			"name": "Server Mocha Tests",
 			"program": "${workspaceFolder}/server/node_modules/mocha/bin/_mocha",
 			"args": [
-				"-r", 
+				"-r",
 				"ts-node/register",
 				"${workspaceFolder}/server/test/**/*.ts"
 			],
 			"internalConsoleOptions": "openOnSessionStart",
 			"skipFiles": [
 				"<node_internals>/**"
-			]
+			],
+			"preLaunchTask": "npm: watch:server"
 		}
 	]
 }

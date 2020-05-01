@@ -28,6 +28,7 @@
 		"compile:server": "tsc -p ./server/tsconfig.json",
 		"lint": "eslint src --ext ts",
 		"watch:client": "tsc -w -p ./client/tsconfig.json",
+		"watch:server": "tsc -w -p ./server/tsconfig.json",
 		"pretest": "npm run compile && npm run lint",
 		"test": "node ./out/test/runTest.js"
 	},
